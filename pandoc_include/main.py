@@ -120,7 +120,7 @@ def removeLeadingWhitespaces(s, num):
     regex = re.compile(r"[^\s]")
     m = regex.search(s)
     if m == None:
-        return
+        return s
     pos = m.span()[0]
     if num < 0:
         return s[pos:]
